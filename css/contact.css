@@ -1,0 +1,79 @@
+/* Contenido */
+main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 1rem;
+}
+
+
+h1 {
+    font-size: 40px;
+}
+
+/* Formulario */
+section:nth-of-type(1) {
+    margin: auto;
+    margin-left: 9rem;
+    width: 20rem;
+}
+
+input,
+textarea {
+    font-size: 16px;
+}
+
+input,
+textarea,
+label {
+    border: none;
+    background: transparent;
+    width: fit-content;
+    outline-style: none;
+    resize: none;
+    font-size: 20px;
+    padding: .5rem;
+}
+
+form>button {
+    border: none;
+    background: var(--color-powder-blue);
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    align-self: flex-end;
+    color: var(--color-nyaza);
+    margin-top: 1rem;
+    float: right;
+}
+
+.input-field {
+    background: var(--color-nyaza);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: .5rem;
+    margin-top: 1rem;
+    overflow-x: scroll;
+}
+
+.input-field:last-of-type>label {
+    align-self: flex-start;
+}
+
+/* Contacto */
+section:nth-of-type(2) {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+section:nth-of-type(2) > div {
+    background: var(--color-nyaza);
+    padding: 3rem 10rem;
+    width: 100%;
+    border-radius: 5rem 0 0 5rem;
+    font-weight: bold;
+}
+
+section:nth-of-type(2) span {
+    font-weight: normal;
+}

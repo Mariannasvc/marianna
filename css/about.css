@@ -1,0 +1,90 @@
+/* Texto */
+main {
+    padding: 1rem 4rem;
+}
+
+/* Content */
+
+/* Estructura*/
+section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "me-image me-text"
+        "skill-bars skill-image";
+    gap: 1em;
+}
+
+/* Sobre mi */
+section>div img {
+    height: 32rem;
+    padding: 1rem;
+    margin-top: 5rem;
+    display: inline-block;
+}
+
+section>div:nth-child(1) {
+    grid-area: me-image;
+    text-align: start;
+}
+
+section>div:nth-child(2) {
+    grid-area: me-text;
+}
+
+section>div:nth-child(2)>h2 {
+    text-align: end;
+    margin-right: 2rem;
+}
+
+section>div:nth-child(2)>p {
+    font-size: 24px;
+    font-weight: lighter;
+    margin: 0;
+}
+
+/* Habilidades */
+section>div:nth-child(3) {
+    grid-area: skill-bars;
+}
+
+section>div:nth-child(3) h2 {
+    margin: 4rem 0 0 0 ;
+}
+
+section>div:nth-child(4) {
+    grid-area: skill-image;
+    text-align: end;
+}
+
+/* Habilidades estructura barras */
+.skills {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.skill-item h3 {
+    font-weight: lighter;
+    font-size: 36px;
+    text-align: start;
+    margin: 1rem 0 0 0;
+}
+
+.skill-item div {
+    position: relative;
+    height: 1rem;
+    background: var(--color-bar-bg);
+    border-radius: 5rem;
+}
+
+.skill-item div::after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 80%;
+    background: var(--color-bar-fg);
+    border-radius: 5rem;
+    left: 0;
+    bottom: 0;
+}

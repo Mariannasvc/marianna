@@ -1,0 +1,36 @@
+/* Contenido */
+main {
+    margin-left: 10rem;
+}
+
+/* Texto */
+main h2 {
+    margin-bottom: 0;
+}
+
+main p {
+    font-size: 24px;
+}
+
+main>section {
+    margin-top: 7rem;
+    max-width: 33rem;
+}
+
+main>section * {
+    margin: 0;
+}
+
+/* Estrellas */
+#stars {
+    margin-top: 2rem;
+    height: 18rem;
+}
+
+/* Modelo */
+#model-image{
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   height: 45rem;
+}

@@ -1,0 +1,15 @@
+/* Footer azul */
+footer.blue-simple-footer {
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--color-powder-blue);
+    color: var(--color-nyaza);
+}
+
+/* Footer verde */
+footer.green-simple-footer {
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--color-nyaza);
+    color: var(--color-powder-blue);
+}

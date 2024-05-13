@@ -1,0 +1,62 @@
+/* Texto */
+main h1 {
+    font-size: 55px;
+    text-align: center;
+}
+
+/* Caja de proyectos */
+section {
+    padding: 1rem;
+    margin: 0 4rem;
+    background: var(--color-powder-blue);
+    display: flex;
+    gap: 1rem;
+}
+
+section > div {
+    height: 20rem;
+    background-position: center !important;
+    background-size: cover !important;
+    position: relative;
+}
+
+section div::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #00000070;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+section div::after {
+    content: attr(aria-valuetext);
+    font-size: 32px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section > div:nth-child(1) {
+    background: url("../images/projects1.png");
+
+}
+
+section > div:nth-child(2) {
+    background: url("../images/projects2.png");
+
+}
+
+section > div:nth-child(1), div:nth-child(2) {
+    flex: 25%;
+}
+
+section > div:nth-child(3){
+    flex: 50%;
+    background: url("../images/projects3.png");
+}
